@@ -1,5 +1,4 @@
 os: windows
-language: cpp
 
 script:
   - msbuild /version
