@@ -18,7 +18,6 @@ steps:
 - task: VSBuild@1
   inputs:
     solution: '**\*.sln'
-    vsVersion: '15.0'
     platform: 'x64'
     configuration: 'Release'
     clean: true
@@ -28,7 +27,6 @@ steps:
 - task: VSBuild@1
   inputs:
     solution: '**\*.sln'
-    vsVersion: '15.0'
     platform: 'x86'
     configuration: 'Release'
     maximumCpuCount: true
