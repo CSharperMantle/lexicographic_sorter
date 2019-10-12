@@ -19,7 +19,7 @@ steps:
   inputs:
     solution: '**\*.sln'
     vsVersion: '15.0'
-    platform: 'x86'
+    platform: 'x64'
     configuration: 'Release'
     clean: true
     maximumCpuCount: true
@@ -32,4 +32,4 @@ steps:
     platform: 'x86'
     configuration: 'Release'
     maximumCpuCount: true
-    msbuildArchitecture: 'x64'
+    msbuildArchitecture: 'x86'
