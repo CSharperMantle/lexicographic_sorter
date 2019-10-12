@@ -15,18 +15,21 @@ variables:
   buildConfiguration: 'Release'
 
 steps:
-- task: MSBuild@1
+- task: VSBuild@1
   inputs:
-    solution: '**/*.sln'
+    solution: '**\*.sln'
+    vsVersion: '15.0'
     platform: 'x86'
     configuration: 'Release'
     clean: true
     maximumCpuCount: true
-
-- task: MSBuild@1
+    restoreNugetPackages: true
+    msbuildArchitecture: 'x64'
+- task: VSBuild@1
   inputs:
-    solution: '**/*.sln'
-    platform: 'x64'
+    solution: '**\*.sln'
+    vsVersion: '15.0'
+    platform: 'x86'
     configuration: 'Release'
-    clean: true
     maximumCpuCount: true
+    msbuildArchitecture: 'x64'
