@@ -1,0 +1,5 @@
+language: cpp
+os: windows
+scripts:
+  - msbuild /version
+  - msbuild
