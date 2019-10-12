@@ -1,5 +1,0 @@
-os: windows
-
-script:
-  - msbuild /version
-  - msbuild
