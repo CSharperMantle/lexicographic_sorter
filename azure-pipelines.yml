@@ -26,7 +26,7 @@ strategy:
    x64_release:
      buildPlatform: 'x64'
      buildConfiguration: 'Release'
-   maxParallel: 2
+ maxParallel: 2
 
 steps:
 - task: NuGetToolInstaller@1
